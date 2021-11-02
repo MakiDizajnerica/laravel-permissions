@@ -1,0 +1,46 @@
+{
+    "name": "makidizajnerica/laravel-permissions",
+    "description": "User permissions package for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "framework",
+        "user",
+        "auth",
+        "permissions"
+    ],
+    "homepage": "https://github.com/MakiDizajnerica/laravel-permissions",
+    "authors": [
+        {
+            "name": "Nemanja Marijanovic",
+            "email": "n.marijanovic@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": ">=8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MakiDizajnerica\\Permissions\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MakiDizajnerica\\Permissions\\Tests": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MakiDizajnerica\\Permissions\\PermissionsServiceProvider"
+            ]
+        }
+    }
+}
